@@ -1,6 +1,6 @@
 /*Responsive*/
 
- @media (max-width: 767px){
+ @media screen and (max-width: 767px){
  	.top-nav{
  		&_btn{
  			display: block;
@@ -43,10 +43,11 @@
 	}
 	.directions{
 		text-align: center;
+		width: 100%;
 	}
 	.content{
 		text-align: center;
-		}
+	}
 	.copy{
 		text-align: center;
 		small{
@@ -65,10 +66,13 @@
 
 }
 
-  @media (max-width: 991px){
+ @media (min-width: 768px) and (max-width: 991px){
 	.top-nav{
  		&_btn{
  			display: block;
+ 			top: 0;
+ 			right: 35px;
+ 			position: relative;
  		}
  		&_menu{
  			flex-direction: column;
@@ -84,6 +88,9 @@
  			line-height: 2;
  			margin: 0;
  			a{
+ 				&:hover{
+ 					color: $active;
+ 				}
  				&::after{
  					display:none;
  				}
@@ -91,19 +98,53 @@
  		}
  	}
 
-	.left-sidebar{
+	 .left-sidebar{
 		margin-top: 20px;
 		&_object{
-			display: none;
-		}
-		&_btn{
 			display: block;
+			img{
+				width: 100%;
+			}
 		}
-		&_menu{
-			display: none;
-			&__active{
-				display: block;
+	} 
+	.directions{
+		text-align: center;
+		width: 100%;
+	}
+	.content{
+		text-align: unset;
+		margin: 0 auto;
+		}
+	.copy{
+		text-align: center;
+		small{
+			display: block;
+			margin: 36px auto;
+		}
+	}
+	.footer{
+		&-contacts{
+			text-align: left;
+		}
+		&-sociale-links{
+			text-align: left;
+		}
+	}
+ }
+
+ @media (min-width: 992px){
+ 	.top-nav_menu {
+ 		padding: 0;
+ 		li{
+ 			margin-right: 15px;
+ 		}
+ 	}
+	.left-sidebar{
+		.left-sidebar_object{
+			img{
+				width: 100%;
 			}
 		}
 	}
-  }
+ 	
+ }

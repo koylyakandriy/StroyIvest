@@ -78,6 +78,9 @@ body {
   padding-top: 40px;
   margin: 0; }
 
+img {
+  max-width: 100%; }
+
 a {
   color: #009adf; }
 
@@ -103,7 +106,7 @@ h2 {
 
 .top-nav {
   background-color: #fff;
-  padding: 15px;
+  padding: 15px 34px;
   position: relative; }
   .top-nav_btn {
     display: none;
@@ -190,9 +193,11 @@ h2 {
         font-weight: 400; }
 
 .content {
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-bottom: 76px; }
 
 .directions {
+  width: 100%;
   margin-top: 80px; }
   .directions .direction-block {
     background-color: #fff;
@@ -250,6 +255,70 @@ h2 {
           background-color: rgba(255, 255, 255, 0.9);
           color: #131313; }
 
+/*Section team*/
+.team {
+  text-align: center; }
+  .team h4 {
+    font-weight: 400;
+    font-size: 1.286em;
+    margin-bottom: 15px; }
+  .team p {
+    margin-bottom: 40px; }
+
+/*Contacts*/
+.contacts {
+  font-size: 1.143em; }
+  .contacts-img {
+    margin-right: 12px;
+    vertical-align: middle; }
+  .contacts-address {
+    display: block;
+    line-height: 2; }
+  .contacts-btn {
+    margin-top: 36px;
+    padding: 20px 70px; }
+  .contacts-sociale-links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 36px; }
+    .contacts-sociale-links ul li {
+      display: inline-block; }
+      .contacts-sociale-links ul li a {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background-color: #009adf;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin-right: 15px;
+        transition: all .2s; }
+        .contacts-sociale-links ul li a:hover {
+          background-color: rgba(0, 154, 223, 0.5);
+          color: #131313; }
+
+/*Organization*/
+.organization-card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  min-height: 25rem; }
+  .organization-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1); }
+  .organization-card a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px; }
+  .organization-card small {
+    display: block;
+    color: rgba(19, 19, 19, 0.5);
+    line-height: 1.5; }
+  .organization-card p {
+    line-height: 1.571em; }
+
 *:hover {
   transition: .25s all; }
 
@@ -257,7 +326,7 @@ h2 {
   outline: none; }
 
 /*Responsive*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .top-nav_btn {
     display: block; }
   .top-nav_menu {
@@ -286,7 +355,8 @@ h2 {
         display: block; }
 
   .directions {
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
   .content {
     text-align: center; }
@@ -301,9 +371,12 @@ h2 {
     text-align: left; }
   .footer-sociale-links {
     text-align: left; } }
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .top-nav_btn {
-    display: block; }
+    display: block;
+    top: 0;
+    right: 35px;
+    position: relative; }
   .top-nav_menu {
     flex-direction: column;
     display: none;
@@ -315,18 +388,43 @@ h2 {
   .top-nav li {
     line-height: 2;
     margin: 0; }
+    .top-nav li a:hover {
+      color: #009adf; }
     .top-nav li a::after {
       display: none; }
 
   .left-sidebar {
     margin-top: 20px; }
     .left-sidebar_object {
-      display: none; }
-    .left-sidebar_btn {
       display: block; }
-    .left-sidebar_menu {
-      display: none; }
-      .left-sidebar_menu__active {
-        display: block; } }
+      .left-sidebar_object img {
+        width: 100%; }
+
+  .directions {
+    text-align: center;
+    width: 100%; }
+
+  .content {
+    text-align: unset;
+    margin: 0 auto; }
+
+  .copy {
+    text-align: center; }
+    .copy small {
+      display: block;
+      margin: 36px auto; }
+
+  .footer-contacts {
+    text-align: left; }
+  .footer-sociale-links {
+    text-align: left; } }
+@media (min-width: 992px) {
+  .top-nav_menu {
+    padding: 0; }
+    .top-nav_menu li {
+      margin-right: 15px; }
+
+  .left-sidebar .left-sidebar_object img {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

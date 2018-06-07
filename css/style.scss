@@ -33,6 +33,11 @@ body{
  padding-top: 40px;
  margin: 0;
 }
+
+img{
+	max-width: 100%;
+}
+
 a{
 	color: $active;
 }
@@ -65,7 +70,7 @@ h2{
 
 .top-nav{
 	background-color: $white;
-	padding: 15px;
+	padding: 15px 34px;
 	position: relative;
 	&_btn{
 		display: none;
@@ -181,8 +186,10 @@ h2{
 }
 .content{
 	margin-top: 40px;
+	margin-bottom: 76px;
 }
 .directions{
+	width: 100%;
 	margin-top: 80px;
 	.direction-block{
 		background-color: $white;
@@ -254,6 +261,89 @@ h2{
 		}
 	}
 }
+/*Section team*/
+.team{
+	text-align: center;
+	h4{
+		font-weight: 400;
+		font-size: 1.286em;
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+}
+
+/*Contacts*/
+.contacts{
+	font-size: 1.143em;
+	&-img{
+		margin-right: 12px;
+		vertical-align: middle;
+	}
+	&-address{
+		display: block;
+		line-height: 2;
+	}
+	&-btn{
+		margin-top: 36px;
+		padding: 20px 70px;
+	}
+	&-sociale-links{
+		ul{
+			list-style: none;
+			padding: 0;
+			margin-top: 36px;
+			li{
+				display: inline-block;
+				a{
+					display: inline-block;
+					width: 42px;
+					height: 42px;
+					background-color: $active;
+					color: $white;
+					border-radius: 50%;
+					text-align: center;
+					line-height: 42px;
+					margin-right: 15px;
+					transition: all .2s;
+					&:hover{
+						background-color: rgba($active, 0.5);
+						color: $dark;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*Organization*/
+.organization{
+	&-card{
+		background-color: $white;
+		margin-bottom: 30px;
+		padding: 25px 30px;
+		min-height: 25rem;
+		&:hover{
+			box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+		}
+		a{
+			text-transform: uppercase;
+			font-weight: bold;
+			text-decoration: none;
+			display: block;
+			margin-bottom: 20px;
+		}
+		small{
+			display: block;
+			color: $inn;
+			line-height: 1.5;
+		}
+		p{
+			line-height: 1.571em;
+		}
+	}
+}
 
 *:hover{
  transition: .25s all;
@@ -262,4 +352,5 @@ h2{
 *:focus{
  outline: none;
 }
+
 @import 'responsible';
