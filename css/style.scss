@@ -345,6 +345,127 @@ h2{
 	}
 }
 
+/*calculations */
+.calc{
+	h4{
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	&-radio{
+			flex-basis: 50%;
+			&:last-child{
+				flex-basis: 100%;
+				display: flex;
+			}
+		}
+	&-programms{
+		display: flex;
+		flex-wrap: wrap;
+		label{
+			margin-bottom: 20px;
+			display: inline-block;
+			small{
+				display: block;
+				margin-left: 27px;
+				opacity: 0.5;
+				font-size: .714em;
+			}
+			&::before{
+				/*style for radio*/
+				content:"";
+				display: inline-block;
+				vertical-align: middle;
+				width: 24px;
+				height: 24px;
+				box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+				background-color: $white;
+				border: 6px solid $white;
+				border-radius: 50%;
+				transition: all .3s;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	input[type="radio"]{
+		display: none;
+		&:checked{
+			&+label::before{
+				background-color: $active;
+				border: 6px solid $white;
+			}
+		}
+	}
+	&-popular{
+		padding: 0 5px;
+		margin-left: 16px;
+		height: 25px;
+		background-color: $active;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: .714em;
+		text-transform: uppercase;
+		position: relative;
+		&::before{
+			content: "";
+			width: 6px;
+			height: 13px;
+			position: absolute;
+			left: -12px;
+			top: 50%;
+			transform: translateY(-50%);
+			border: 6px solid transparent;
+			border-right: 6px solid $active;
+
+		}
+	}
+	&-summ{
+		&_invest{
+			margin-top: 30px;
+			&_label{
+				margin-right: 10px;
+			}
+			&_number{
+				display: inline-block;
+				padding: 10px 48px;
+				background-color: $white;
+				font-size: 1.286em;
+			}
+		}
+	}
+	&-total{
+		display: inline-block;
+		text-align: center;
+		background-color: $white;
+		padding: 10px;
+		margin-top: 20px;
+		margin-right: 40px;
+		 strong{
+			font-size: 1.286em;
+			color: $active;
+			font-weight: 400;
+		} 
+		small{
+			font-size: .714em;
+		}
+	}
+	&-monthly{
+		font-size: 1.286em;
+		display: inline-block;
+		text-align: center;
+		strong{
+			color: $active;
+			font-weight: 400;
+		}
+		small{
+			font-size: .714em;;
+		} 
+	}
+}
+
 *:hover{
  transition: .25s all;
 }

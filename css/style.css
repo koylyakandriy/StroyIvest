@@ -319,6 +319,99 @@ h2 {
   .organization-card p {
     line-height: 1.571em; }
 
+/*calculations */
+.calc h4 {
+  margin-top: 0;
+  margin-bottom: 30px; }
+.calc-radio {
+  flex-basis: 50%; }
+  .calc-radio:last-child {
+    flex-basis: 100%;
+    display: flex; }
+.calc-programms {
+  display: flex;
+  flex-wrap: wrap; }
+  .calc-programms label {
+    margin-bottom: 20px;
+    display: inline-block; }
+    .calc-programms label small {
+      display: block;
+      margin-left: 27px;
+      opacity: 0.5;
+      font-size: .714em; }
+    .calc-programms label::before {
+      /*style for radio*/
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+      background-color: #fff;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      transition: all .3s; }
+    .calc-programms label:hover {
+      cursor: pointer; }
+.calc input[type="radio"] {
+  display: none; }
+  .calc input[type="radio"]:checked + label::before {
+    background-color: #009adf;
+    border: 6px solid #fff; }
+.calc-popular {
+  padding: 0 5px;
+  margin-left: 16px;
+  height: 25px;
+  background-color: #009adf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .714em;
+  text-transform: uppercase;
+  position: relative; }
+  .calc-popular::before {
+    content: "";
+    width: 6px;
+    height: 13px;
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right: 6px solid #009adf; }
+.calc-summ_invest {
+  margin-top: 30px; }
+  .calc-summ_invest_label {
+    margin-right: 10px; }
+  .calc-summ_invest_number {
+    display: inline-block;
+    padding: 10px 48px;
+    background-color: #fff;
+    font-size: 1.286em; }
+.calc-total {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  margin-right: 40px; }
+  .calc-total strong {
+    font-size: 1.286em;
+    color: #009adf;
+    font-weight: 400; }
+  .calc-total small {
+    font-size: .714em; }
+.calc-monthly {
+  font-size: 1.286em;
+  display: inline-block;
+  text-align: center; }
+  .calc-monthly strong {
+    color: #009adf;
+    font-weight: 400; }
+  .calc-monthly small {
+    font-size: .714em; }
+
 *:hover {
   transition: .25s all; }
 
@@ -370,7 +463,12 @@ h2 {
   .footer-contacts {
     text-align: left; }
   .footer-sociale-links {
-    text-align: left; } }
+    text-align: left; }
+
+  .calc-total {
+    width: 100%; }
+  .calc-monthly {
+    width: 100%; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .top-nav_btn {
     display: block;
@@ -417,7 +515,14 @@ h2 {
   .footer-contacts {
     text-align: left; }
   .footer-sociale-links {
-    text-align: left; } }
+    text-align: left; }
+
+  .calc-total {
+    width: 100%; }
+  .calc-monthly {
+    width: 100%; }
+  .calc-summ_invest_number {
+    text-align: center; } }
 @media (min-width: 992px) {
   .top-nav_menu {
     padding: 0; }

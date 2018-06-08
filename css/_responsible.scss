@@ -63,6 +63,14 @@
 			text-align: left;
 		}
 	}
+	.calc{
+		&-total{
+			width: 100%;
+		}
+		&-monthly{
+			width: 100%;
+		}
+	}
 
 }
 
@@ -98,7 +106,7 @@
  		}
  	}
 
-	 .left-sidebar{
+	.left-sidebar{
 		margin-top: 20px;
 		&_object{
 			display: block;
@@ -130,7 +138,18 @@
 			text-align: left;
 		}
 	}
- }
+	.calc{
+		&-total{
+			width: 100%;
+		}
+		&-monthly{
+			width: 100%;
+		}
+		&-summ_invest_number{
+			text-align: center;
+		}
+	}
+}
 
  @media (min-width: 992px){
  	.top-nav_menu {
@@ -146,5 +165,4 @@
 			}
 		}
 	}
- 	
  }
