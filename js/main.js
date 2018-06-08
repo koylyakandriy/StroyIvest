@@ -58,9 +58,6 @@ $(document).ready(function() {
 		$('#total').text(total.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 		$('.calc-monthly span').text(monthly.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
 		$('#month').text(month);
-
-		// console.log('month: ' + $(this).attr('data-month'));
-		// console.log('persent: ' + $(this).attr('data-per'));
 	});
 
 	$( '.calc-range' ).on('change', function(event){

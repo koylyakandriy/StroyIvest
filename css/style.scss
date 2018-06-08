@@ -53,6 +53,7 @@ h2{
 .btn{
 	padding: 20px 30px;
 	display: inline-block;
+	border: none;
 	color: $white;
 	border-radius: 5px;
 	text-decoration: none;
@@ -463,6 +464,110 @@ h2{
 		small{
 			font-size: .714em;;
 		} 
+	}
+}
+
+/*Style for object*/
+.object{
+	&-card{
+		background-color: $white;
+		margin-bottom: 30px;
+		img{
+			width: 100%;
+		}
+		&_text{
+			padding: 30px;
+		}
+		&_title{
+			display: block;
+			font-size: 1.143em;
+			color: $active;
+			text-decoration: none;
+		}
+		&_price{
+			display: block;
+			color: $active;
+			font-size: 1.429em;
+			text-align: center;
+			font-weight: 700;
+		}
+		&_btn{
+			display: block;
+			text-align: center;
+		}
+		&_more{
+			display: block;
+			color: $dark;
+			text-align: center;
+			margin-top: 30px;
+		}
+	}
+}
+
+/*Style for object*/
+.object-page{
+	&_galery{
+		float: right;
+	}
+}
+
+/*Modal windows*/
+.modal{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	&-content{
+		background-color: $white;
+		width: 100%;
+		max-width: 370px;
+		margin: auto;
+		text-align: center;
+		padding: 30px 50px;
+		margin-top: 50px;
+		position: relative;
+		box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18);
+		.close{
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			font-size: 1.429em;
+			opacity: 0.5;
+			&:hover{
+				cursor:pointer;
+			}
+		}
+		h4{
+			font-size: 1.286em;
+			color: $active;
+			margin-top: 0;
+		}
+		p{
+			font-size: .857em;
+			margin-top: 0;
+			margin-bottom: 14px;
+		}
+	}
+	&-form{
+		margin-top: 37px;
+		input{
+			display: block;
+			width: 100%;
+			border: 1px solid rgba($dark, 0.15);
+			padding: 20px;
+			border-radius: 4px;
+			font-size: 1.071em;
+			margin-bottom: 10px;
+		}
+		&_btn{
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+		}
 	}
 }
 
