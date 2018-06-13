@@ -112,7 +112,34 @@ h2{
 						transform: translateY(38px) scale(1);
 					}
 				}
-
+			}
+		}
+	}
+	&_second{
+		display: none;
+		list-style: none;
+		li{
+			margin-right: 45px;
+			a{
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $dark;
+				font-weight: 700;
+				&::after{
+					content:"";
+					display: block;
+					width: 100%;
+					background-color: $active;
+					height: 2px;
+					transform: translateY(38px) scale(0);
+					transition: all .2s;
+				}
+				&:hover{
+					text-decoration: none;
+					&::after{
+						transform: translateY(38px) scale(1);
+					}
+				}
 			}
 		}
 	}

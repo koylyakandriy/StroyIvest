@@ -104,6 +104,13 @@ h2 {
     border-bottom: 5px solid #0077ac; }
     .btn-primary:hover {
       background-color: #00a5ee; }
+    .btn-primary:active{
+    	background-color: #97de95;
+    	padding: 20px 30px;
+    	margin-top: 5px;
+    	border-bottom: 0px solid #0077ac;}
+    	
+    	
 
 .top-nav {
   background-color: #fff;
@@ -127,22 +134,49 @@ h2 {
     .top-nav_menu li {
       margin-right: 45px; }
       .top-nav_menu li a {
+      	position: relative;
         text-decoration: none;
         text-transform: uppercase;
         color: #131313;
         font-weight: 700; }
         .top-nav_menu li a::after {
           content: "";
+          position: absolute;
+          top: 55px;
           display: block;
-          width: 100%;
+          width: 0;
           background-color: #009adf;
           height: 2px;
-          transform: translateY(38px) scale(0);
-          transition: all .2s; }
+          transition: all .3s;}
         .top-nav_menu li a:hover {
           text-decoration: none; }
           .top-nav_menu li a:hover::after {
-            transform: translateY(38px) scale(1); }
+          	width: 100%;
+          	transition: all .4s;}
+  /*.top-nav_second {
+    display: none;
+    list-style: none; }
+    .top-nav_second li {
+      margin-right: 45px; }
+      .top-nav_second li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #131313;
+        font-weight: 700; }
+        .top-nav_second li a::after {
+          content: "";
+          position: absolute;
+          top: 55px;
+          display: block;
+          width: 0;
+          background-color: #009adf;
+          height: 2px;
+          transition: all .3s;}
+        .top-nav_second li a:hover {
+          text-decoration: none; }
+          .top-nav_second li a:hover::after {
+            width: 100%;
+          	transition: all .4s;}*/
 
 .left-sidebar {
   margin-top: 40px; }
@@ -335,9 +369,11 @@ h2 {
   .calc-programms label {
     margin-bottom: 20px;
     display: inline-block; }
+    .calc-programms label span {
+      margin-left: 10px;}
     .calc-programms label small {
       display: block;
-      margin-left: 27px;
+      margin-left: 37px;
       opacity: 0.5;
       font-size: .714em; }
     .calc-programms label::before {
